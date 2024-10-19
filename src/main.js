@@ -1,8 +1,8 @@
 import k from "./kaplayCtx.js";
-import disclaimer from "./scenes/disclaimer";
-import game from "./scenes/game";
-import gameover from "./scenes/gameover";
-import mainMenu from "./scenes/mainMenu";
+import disclaimer from "./scenes/disclaimer.js";
+import game from "./scenes/game.js";
+import gameover from "./scenes/gameover.js";
+import mainMenu from "./scenes/mainMenu.js";
 
 k.loadSprite("chemical-bg", "graphics/chemical-bg.png");
 k.loadSprite("platforms", "graphics/platforms.png");
