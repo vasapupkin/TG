@@ -1,4 +1,4 @@
-import k from "./kaplayCtx";
+import k from "./kaplayCtx.js";
 import disclaimer from "./scenes/disclaimer";
 import game from "./scenes/game";
 import gameover from "./scenes/gameover";
