@@ -1,0 +1,1 @@
+{"version":3,"file":"formatText.d.ts","sourceRoot":"","sources":["../../../src/gfx/formatText.ts"],"names":[],"mappings":"AAcA,OAAO,KAAK,EAER,WAAW,EAEX,aAAa,EAChB,MAAM,QAAQ,CAAC;AAsBhB,wBAAgB,iBAAiB,CAAC,IAAI,EAAE,MAAM,GAAG;IAC7C,YAAY,EAAE,MAAM,CAAC,MAAM,EAAE,MAAM,EAAE,CAAC,CAAC;IACvC,IAAI,EAAE,MAAM,CAAC;CAChB,CAgEA;AAED,wBAAgB,UAAU,CAAC,GAAG,EAAE,WAAW,GAAG,aAAa,CAmS1D"}

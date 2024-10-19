@@ -1,0 +1,23 @@
+import type { Collision, GameObj, Tag } from "../../types";
+import { KEventController } from "../../utils";
+import type { GameObjEventMap, GameObjEventNames } from "./eventMap";
+export type TupleWithoutFirst<T extends any[]> = T extends [infer R, ...infer E] ? E : never;
+export declare function on<Ev extends GameObjEventNames | string & {}>(event: Ev, tag: Tag, cb: (obj: GameObj, ...args: TupleWithoutFirst<GameObjEventMap[Ev]>) => void): KEventController;
+export declare const onFixedUpdate: ((action: () => void) => KEventController) & ((tag: Tag, action: (obj: GameObj) => void) => KEventController);
+export declare const onUpdate: ((action: () => void) => KEventController) & ((tag: Tag, action: (obj: GameObj) => void) => KEventController);
+export declare const onDraw: ((action: () => void) => KEventController) & ((tag: Tag, action: (obj: GameObj) => void) => KEventController);
+export declare const onAdd: ((action: (obj: GameObj) => void) => KEventController) & ((tag: Tag, action: (obj: GameObj) => void) => KEventController);
+export declare const onDestroy: ((action: (obj: GameObj) => void) => KEventController) & ((tag: Tag, action: (obj: GameObj) => void) => KEventController);
+export declare function onCollide(t1: Tag, t2: Tag, f: (a: GameObj, b: GameObj, col?: Collision) => void): KEventController;
+export declare function onCollideUpdate(t1: Tag, t2: Tag, f: (a: GameObj, b: GameObj, col?: Collision) => void): KEventController;
+export declare function onCollideEnd(t1: Tag, t2: Tag, f: (a: GameObj, b: GameObj, col?: Collision) => void): KEventController;
+export declare function forAllCurrentAndFuture(t: Tag, action: (obj: GameObj) => void): void;
+export declare const onClick: ((action: () => void) => KEventController) & ((tag: Tag, action: (obj: GameObj) => void) => KEventController);
+export declare function onHover(t: Tag, action: (obj: GameObj) => void): KEventController;
+export declare function onHoverUpdate(t: Tag, action: (obj: GameObj) => void): KEventController;
+export declare function onHoverEnd(t: Tag, action: (obj: GameObj) => void): KEventController;
+export declare function onLoading(action: (progress: number) => void): void;
+export declare function onResize(action: () => void): void;
+export declare function onError(action: (err: Error) => void): void;
+export declare function onLoad(cb: () => void): void;
+//# sourceMappingURL=events.d.ts.map

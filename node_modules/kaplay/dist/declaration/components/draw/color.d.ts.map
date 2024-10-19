@@ -1,0 +1,1 @@
+{"version":3,"file":"color.d.ts","sourceRoot":"","sources":["../../../../src/components/draw/color.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,KAAK,KAAK,EAAE,KAAK,SAAS,EAAO,MAAM,kBAAkB,CAAC;AACnE,OAAO,KAAK,EAAE,IAAI,EAAE,MAAM,aAAa,CAAC;AAExC;;;;GAIG;AACH,MAAM,WAAW,SAAU,SAAQ,IAAI;IACnC,KAAK,EAAE,KAAK,CAAC;CAChB;AAED,wBAAgB,KAAK,CAAC,GAAG,IAAI,EAAE,SAAS,GAAG,SAAS,CAQnD"}
